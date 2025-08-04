@@ -1,5 +1,5 @@
 #include<iostream>
-void butler(void); // ÏÈÉùÃ÷ºóµ÷ÓÃ£¬Èôbutlerº¯ÊıÔÚmainº¯ÊıÖ®Ç°¶¨Òå£¬Ôò²»ĞèÒªÇ°ÖÃÉùÃ÷¡£
+void butler(void); // å…ˆå£°æ˜åè°ƒç”¨ï¼Œè‹¥butlerå‡½æ•°åœ¨mainå‡½æ•°ä¹‹å‰å®šä¹‰ï¼Œåˆ™ä¸éœ€è¦å‰ç½®å£°æ˜ã€‚
 int main03() 
 {
 	printf("A\n");
