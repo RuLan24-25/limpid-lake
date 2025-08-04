@@ -3,17 +3,17 @@
 int main03(void)
 {
 	int line = 0;
-	printf("Ğ´´úÂë\n");
+	printf("å†™ä»£ç \n");
 	while (line < 10)
 	{
-		printf("Ğ´ÁË%dĞĞ´úÂë£¬ÍºÍ·ÖĞ\n", line + 1);
+		printf("å†™äº†%dè¡Œä»£ç ï¼Œç§ƒå¤´ä¸­\n", line + 1);
 		line++;
 	}
 	while(line>=10)
 	{
 		if (line % 10 == 0)
 		{
-			printf("Ó­À´¿¼ÊÔ\n""³É¹¦¿Û1\n""Ê§°Ü¿Û2\n");
+			printf("è¿æ¥è€ƒè¯•\n""æˆåŠŸæ‰£1\n""å¤±è´¥æ‰£2\n");
 			int result = 0;
 			scanf_s("%d", &result);
 			if (result == 1)
@@ -23,14 +23,14 @@ int main03(void)
 			}
 			else if (result == 2)
 			{
-				printf("¼ÌĞøĞ´´úÂë£¬¼ÌĞøÍºÍ·\n");
+				printf("ç»§ç»­å†™ä»£ç ï¼Œç»§ç»­ç§ƒå¤´\n");
 				line++;
 
 			}
 		}
 		else
 		{
-			printf("Ğ´ÁË%dĞĞ´úÂë£¬ÍºÍ·ÖĞ\n", line + 1);
+			printf("å†™äº†%dè¡Œä»£ç ï¼Œç§ƒå¤´ä¸­\n", line + 1);
 			line++;
 		}
 	}
