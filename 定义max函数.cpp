@@ -1,4 +1,4 @@
-#include <iostream>//±ê×¼ÊäÈëÊä³öÁ÷
+#include <iostream>//æ ‡å‡†è¾“å…¥è¾“å‡ºæµ
 float max(float a, float b, float c)
 {
 
@@ -20,16 +20,16 @@ float max(float a, float b, float c)
 }
 int main02(void)
 {	
-	printf("ÇëÊäÈëÈı¸öÊı×Ö£º\n")
+	printf("è¯·è¾“å…¥ä¸‰ä¸ªæ•°å­—ï¼š\n")
 ; 
 	float a, b, c;
 
 	scanf_s("%f %f %f", &a, &b, &c);
 	
-	printf("×î´óÖµÎª£º%.2f\n", max(a,b,c));
+	printf("æœ€å¤§å€¼ä¸ºï¼š%.2f\n", max(a,b,c));
 
 	return 0;
 }
 /*
-ÈıÄ¿ÔËËã·û£º£¨a>b£©?((a>c)?(a):(c)):((b>c)?(b):(c))
+ä¸‰ç›®è¿ç®—ç¬¦ï¼šï¼ˆa>bï¼‰?((a>c)?(a):(c)):((b>c)?(b):(c))
 */
