@@ -1,65 +1,35 @@
-#include<stdlib.h>
-#include<stdio.h>
-// This program provides a menu for the user to choose a system tool to open.
-int main02(void)
+#include <iostream>//标准输入输出流
+float max(float a, float b, float c)
 {
-	printf("Please choose the beused tool:\n");
-	printf("1，计算器\n""2，命令指示符\\n""3，控制面板\n""4,画板\n""5,记事本\n""6,系统配置\n""7,注册表编辑器\n""8,服务管理器\n""9,程序和功能\n""10,磁盘管理\n""11,网络连接\n");
 
-	int choice = 0;
-	scanf_s("%d", &choice);
-
-	if(choice==1)
+	if (a > b)
 	{
-		system("calc");
-	}
-	else if(choice==2)
-	{
-		system("cmd");
-	}
-	else if(choice==3)
-	{
-		system("control");
-	}
-	else if(choice==4)
-	{
-		system("mspaint");
-	}
-	else if(choice==5)
-	{
-		system("notepad");
-	}
-	else if(choice==6)
-	{
-		system("msconfig");
-	}
-	else if(choice==7)
-	{
-		system("regedit");
-	}
-	else if(choice==8)
-	{
-		system("services.msc");
-	}
-	else if(choice==9)
-	{
-		system("appwiz.cpl");
-	}
-	else if(choice==10)
-	{
-		system("diskmgmt.msc");
-	}
-	else if(choice==11)
-	{
-		system("ncpa.cpl");
+		if (a > c)
+			return a;
+		else
+			return c;
 	}
 	else
 	{
-		printf("Invalid choice!\n");
+		if (b > c)
+			return b;
+		else
+			return c;
 	}
-	
+	return 0.00;
+}
+int main02(void)
+{	
+	printf("请输入三个数字：\n")
+; 
+	float a, b, c;
 
-
+	scanf_s("%f %f %f", &a, &b, &c);
 	
+	printf("最大值为：%.2f\n", max(a,b,c));
+
 	return 0;
 }
+/*
+三目运算符：（a>b）?((a>c)?(a):(c)):((b>c)?(b):(c))
+*/
