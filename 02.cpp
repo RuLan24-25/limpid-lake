@@ -160,7 +160,7 @@ int main(void)
 				printf("无法进行此操作！请重试！\n");
 				break;
 			}
-			if (map[i ][j+1] == 7)// 上方为箱子和目标位置
+			if (map[i ][j+1] == 7)// 右方为箱子和目标位置
 			{
 				map[i][j] -= 6;
 				map[i][j+1] = 6;
@@ -173,7 +173,7 @@ int main(void)
 				{
 					map[i][j] -= 6;
 					map[i][j+1] = 6;
-					map[i][j+2] += 4;
+					map[i][j+2] +=4;
 					j = j + 1;
 
 				}
